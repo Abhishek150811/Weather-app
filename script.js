@@ -15,7 +15,7 @@ function handleClick(event){
 }
 
 async function city_to_coordinates(){
-    let address = `http://api.openweathermap.org/geo/1.0/direct?q=${city_name}&limit=1&appid=c64c3600659b9d08e935e8fbc7ad022c` ;
+    let address = `https://api.openweathermap.org/geo/1.0/direct?q=${city_name}&limit=1&appid=c64c3600659b9d08e935e8fbc7ad022c` ;
     let response = await fetch(address) ;
     if(response.status == 200){
         obj = await response.json() ;
