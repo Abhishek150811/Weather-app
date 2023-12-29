@@ -36,7 +36,7 @@ async function coordinates_to_temp(lat , lon){
         const temp = obj.main.temp ; 
         const humidity = obj.main.humidity ;
         const wind_speed = obj.wind.speed ; 
-        document.getElementById('temp').innerHTML = temp ; 
+        document.getElementById('temp').innerHTML = temp  + "°C"; 
         document.getElementsByClassName('wind')[0].innerHTML = wind_speed ; 
         document.getElementsByClassName('humidity')[0].innerHTML = humidity ; 
 
